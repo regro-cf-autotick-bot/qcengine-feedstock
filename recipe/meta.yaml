@@ -23,9 +23,11 @@ requirements:
     - pip
   run:
     - python
+    - pydantic >=0.18.*
     - pyyaml
     - py-cpuinfo
     - psutil
+    - qcelemental >=0.2.1
 
 test:
   imports:
@@ -34,7 +36,7 @@ test:
   requires:
     - pytest
   commands:
-    - py.test --pyargs qcengine
+    - pytest --pyargs qcengine
 
 about:
   home: http://github.com/MolSSI/QCEngine
