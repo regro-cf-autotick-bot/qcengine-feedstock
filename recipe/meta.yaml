@@ -1,6 +1,6 @@
 {% set name = "qcengine" %}
-{% set version = "0.5.0" %}
-{% set sha256 = "53f2cfa09db365b78aafb46c120c0419f6c1ac98c90f931b0ff123aea047119d" %}
+{% set version = "0.5.1" %}
+{% set sha256 = "0d70a463859a5e15c74b1ba32e7d746a5ac59d8c624c9b545ca943fc06214d5e" %}
 
 package:
   name: {{ name|lower }}
@@ -27,7 +27,7 @@ requirements:
     - pyyaml
     - py-cpuinfo
     - psutil
-    - qcelemental >=0.2.1
+    - qcelemental >=0.2.2
 
 test:
   imports:
