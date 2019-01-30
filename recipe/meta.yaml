@@ -7,13 +7,12 @@ package:
   version: {{ version }}
 
 source:
-  fn: QCEngine-{{ version }}.tar.gz
-  url: https://github.com/MolSSI/QCEngine/archive/v{{ version }}.tar.gz
+  url: https://github.com/MolSSI/{{ name }}/archive/v{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . --no-deps -vvv"
 
 requirements:
@@ -31,7 +30,6 @@ requirements:
 
 test:
   imports:
-    - pytest
     - qcengine
   requires:
     - pytest
