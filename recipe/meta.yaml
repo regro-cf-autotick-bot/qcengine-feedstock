@@ -1,6 +1,6 @@
 {% set name = "qcengine" %}
-{% set version = "0.5.1" %}
-{% set sha256 = "c9c2e00683f3086bbb642083d37c68bb220a6fca6d722bb431373a98a824aa5b" %}
+{% set version = "0.5.2" %}
+{% set sha256 = "16ce09277570e8c55308fff0b0bbdaf6b4c5f46e442a316a2679d58a0da468e6" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps -vvv"
 
 requirements:
@@ -21,11 +21,11 @@ requirements:
     - pip
   run:
     - python
-    - pydantic >=0.18.*
+    - pydantic >=0.20.*
     - pyyaml
     - py-cpuinfo
     - psutil
-    - qcelemental >=0.2.2
+    - qcelemental >=0.2.6
 
 test:
   imports:
@@ -48,3 +48,4 @@ about:
 extra:
   recipe-maintainers:
     - dgasmith
+    - lnaden
