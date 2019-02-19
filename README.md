@@ -114,5 +114,5 @@ Feedstock Maintainers
 =====================
 
 * [@dgasmith](https://github.com/dgasmith/)
-* [@lnaden](https://github.com/lnaden)
+* [@lnaden](https://github.com/lnaden/)
 
