@@ -1,6 +1,6 @@
 {% set name = "qcengine" %}
-{% set version = "0.6.1" %}
-{% set sha256 = "dd65842b21eeecdc2c793e1e84bf88d99f950dd201142118652d9b0ecba12b0d" %}
+{% set version = "0.6.2" %}
+{% set sha256 = "99b04f6eaafc21f6db19e70708b173d6d6360389bc822c89fe116d4e55eabea0" %}
 
 package:
   name: {{ name|lower }}
@@ -17,10 +17,10 @@ build:
 
 requirements:
   build:
-    - python
+    - python >=3.6
     - pip
   run:
-    - python
+    - python >=3.6
     - pydantic >=0.20.*
     - pyyaml
     - py-cpuinfo
