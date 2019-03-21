@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About qcengine
 ==============
 
@@ -18,8 +14,14 @@ Summary: A wrapper for Quantum Chemistry engines that adheres to the MolSSI (mol
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/qcengine-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/qcengine-feedstock)
+
+<table><tr>
+    <td>All platforms:</td>
+    <td>
+      <img src="https://img.shields.io/badge/noarch-disabled-lightgrey.svg" alt="noarch disabled">
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
