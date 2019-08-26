@@ -25,7 +25,7 @@ requirements:
     - pyyaml
     - py-cpuinfo
     - psutil
-    - qcelemental >=0.6.0
+    - qcelemental >=0.7.0
 
 test:
   imports:
